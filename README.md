@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎓 CIMPulse – Club Information Management Portal
+# 🎓 CIMP – Club Information Management Portal
 
 A full-stack web platform designed for **VIT SWC (Student Welfare Committee)** to streamline the creation, management, and oversight of student clubs.  
 Built for clean role-based workflows, seamless member control, and an intuitive dashboard experience.
