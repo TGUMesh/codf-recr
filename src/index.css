@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: 'Abel', 'Outfit', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #000000 0%, #0a0a1a 25%, #1a1a3a 50%, #2d1b69 75%, #4c1d95 100%);
+    min-height: 100vh;
+    color: #ffffff;
+    font-family: 'Abel', 'Outfit', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abel', 'Outfit', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+  }
+  
+  .font-abel {
+    font-family: 'Abel', sans-serif;
+  }
+  
+  .font-outfit {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-black/20 backdrop-blur-xl border border-violet-500/20 rounded-2xl shadow-2xl shadow-violet-900/20;
+    font-family: 'Abel', sans-serif;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-violet-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent;
+    font-family: 'Abel', sans-serif;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 text-white font-normal py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-violet-500/25;
+    font-family: 'Abel', sans-serif;
+  }
+  
+  .btn-secondary {
+    @apply bg-black/30 hover:bg-black/40 text-white font-normal py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm border border-violet-500/30;
+    font-family: 'Abel', sans-serif;
+  }
+  
+  .input-field {
+    @apply bg-black/20 border border-violet-500/30 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:border-violet-400 focus:ring-2 focus:ring-violet-500/20 transition-all duration-300 backdrop-blur-sm;
+    font-family: 'Abel', sans-serif;
+  }
+  
+  .stat-card {
+    @apply bg-black/30 backdrop-blur-xl border border-violet-500/20 rounded-2xl p-6 hover:bg-black/40 transition-all duration-300 transform hover:scale-105 shadow-xl shadow-violet-900/10;
+    font-family: 'Abel', sans-serif;
+  }
+  
+  /* Sidebar Navigation Buttons */
+  .nav-button {
+    @apply w-full flex items-center px-4 py-3 text-left rounded-xl mb-2 transition-all duration-300 transform hover:scale-105 text-white/80 hover:bg-violet-600/20 hover:text-white border border-transparent hover:border-violet-500/30;
+    font-family: 'Abel', sans-serif;
+  }
+  
+  .nav-button.active {
+    @apply bg-gradient-to-r from-violet-600 to-purple-600 text-white shadow-lg shadow-violet-500/25 border-violet-400/50;
+  }
+  
+  /* Dashboard Action Buttons */
+  .action-button {
+    @apply w-full flex items-center space-x-4 p-4 bg-gradient-to-r text-white rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105 font-normal border border-violet-400/30;
+    font-family: 'Abel', sans-serif;
+  }
+  
+  /* Card Action Buttons */
+  .card-button-primary {
+    @apply flex-1 bg-gradient-to-r from-violet-600 to-purple-600 text-white py-3 px-4 rounded-xl hover:from-violet-700 hover:to-purple-700 transition-all duration-300 font-normal text-sm shadow-lg hover:shadow-xl transform hover:scale-105 border border-violet-400/50;
+    font-family: 'Abel', sans-serif;
+  }
+  
+  .card-button-secondary {
+    @apply flex-1 bg-black/30 text-white py-3 px-4 rounded-xl hover:bg-black/40 transition-all duration-300 font-normal text-sm shadow-md hover:shadow-lg transform hover:scale-105 border border-violet-500/30;
+    font-family: 'Abel', sans-serif;
+  }
+  
+  /* Form Buttons */
+  .form-button-primary {
+    @apply px-8 py-3 bg-gradient-to-r from-violet-600 to-purple-600 text-white rounded-xl hover:from-violet-700 hover:to-purple-700 transition-all duration-300 font-normal shadow-lg hover:shadow-xl transform hover:scale-105 border border-violet-400/50;
+    font-family: 'Abel', sans-serif;
+  }
+  
+  .form-button-secondary {
+    @apply px-8 py-3 border border-violet-500/50 rounded-xl text-white hover:bg-violet-600/20 transition-all duration-300 font-normal shadow-md hover:shadow-lg transform hover:scale-105 backdrop-blur-sm;
+    font-family: 'Abel', sans-serif;
+  }
+  
+  .abel-text {
+    font-family: 'Abel', sans-serif;
+  }
+  
+  .outfit-text {
+    font-family: 'Outfit', sans-serif;
+  }
+}
