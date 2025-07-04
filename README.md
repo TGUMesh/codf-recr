@@ -10,12 +10,10 @@ Built for clean role-based workflows, seamless member control, and an intuitive 
 ## 🧠 Overview
 
 > 🔐 **Role-based access**  
-> 🧑💼 **Admins** can create/edit clubs, assign roles, and manage members.  
+> 🧑‍💼 **Admins** can create/edit clubs, assign roles, and manage members.  
 > 🎓 **Presidents** manage members of their own club.  
-> 👨🏫 **Faculty Coordinators** get oversight access.  
+> 👨‍🏫 **Faculty Coordinators** get oversight access.  
 > 👥 **Students** can explore clubs and request to join.
-
-This project ensures a centralized, secure, and structured environment for club operations within a university setup.
 
 ---
 
@@ -40,6 +38,30 @@ This project ensures a centralized, secure, and structured environment for club 
 
 ---
 
+## 🗂️ Project Folder Structure
+
+| Path                            | Description                                      |
+|----------------------------------|--------------------------------------------------|
+| `/backend`                      | Express.js backend server                        |
+| ├── `/models`                   | MongoDB Mongoose schemas (User, Club, Member)    |
+| ├── `/routes`                   | Express route handlers for each role/module      |
+| ├── `/controllers`              | Business logic for each route                    |
+| ├── `/middleware`               | Auth, role checks, and error handling            |
+| ├── `/utils`                    | Utility functions (JWT, validation, etc.)        |
+| └── `server.js`                 | Entry point of the backend app                   |
+| `/frontend`                     | Bolt-based frontend (Next.js + Tailwind)         |
+| ├── `/app`                      | Next.js App Router setup                         |
+| ├── `/components`               | Reusable UI components (Navbar, Card, etc.)      |
+| ├── `/pages`                    | Page-based routing (for static routes if needed) |
+| ├── `/lib`                      | Helpers like API fetchers, auth checks, etc.     |
+| ├── `/styles`                   | Custom Tailwind CSS and global styles            |
+| └── `tailwind.config.js`        | Tailwind theme configuration                     |
+| `.env`                          | Environment variables (JWT secret, DB URI)       |
+| `README.md`                     | Project documentation                            |
+| `package.json`                  | Project dependencies                             |
+
+---
+
 ## 🧩 Features
 
 - 📊 **Admin Dashboard** – Club overview, quick actions, and search
@@ -52,30 +74,36 @@ This project ensures a centralized, secure, and structured environment for club 
 
 ---
 
-## 🔗 Routes Overview
+## 🚀 Getting Started
 
-| Role       | Access Routes                                             |
-|------------|-----------------------------------------------------------|
-| Admin      | `/dashboard`, `/create-club`, `/assign`, `/club/:id`     |
-| President  | `/club/:id`, `/club/:id/members`                         |
-| Faculty    | `/club/:id` (read-only)                                  |
-| Student    | `/clubs`, `/club/:id/request`                            |
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/cimpulse.git
+```
+
+### 2. Setup Backend
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+### 3. Setup Frontend (Bolt)
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
 ---
 
-## 🗂️ Folder Structure
+## 📩 Contributing
 
-```bash
-CIMPulse/
-├── backend/
-│   ├── models/
-│   ├── routes/
-│   ├── controllers/
-│   └── middleware/
-├── frontend/
-│   ├── app/
-│   ├── components/
-│   ├── pages/
-│   └── styles/
-├── README.md
-└── .env
+Have a feature in mind? Found a bug?  
+Feel free to open an issue or pull request — contributions are welcome!
+
+---
+
+## 🧑‍💻 Built With 💙 by [TGUmesh]
+
+</div>
